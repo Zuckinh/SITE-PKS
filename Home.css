@@ -1,0 +1,143 @@
+/* Estilos gerais */
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinhamento no topo */
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;  /* Evita a rolagem de tela */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #B22222; /* Cor vermelha escura */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza a logo */
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    width: 60px;
+    height: 40px;
+}
+
+/* Estilo do texto "PKS V1" */
+#pks-title {
+    font-family: 'Creepster', sans-serif;  /* Fonte de terror para "PKS V1" */
+    color: #FF0000;
+    font-size: 40px;
+    margin-top: 80px;  /* Espaço acima do texto "Peace Killers" */
+    border: 2px solid #000000;  /* Borda preta em volta das letras */
+    padding: 5px 15px;
+    position: absolute;
+    top: 80px;
+    animation: flicker 1.5s infinite;  /* Animação de flicker (piscar) */
+}
+
+/* Animação de flicker no texto "V1" */
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Estilo do texto "Peace Killers" */
+.peace-killers-text h2 {
+    font-family: 'Creepster', sans-serif;
+    font-size: 50px;
+    color: #FF0000;
+    animation: flicker 1.5s infinite;
+    margin-top: 100px; /* Ajuste o espaço para que o texto fique logo abaixo do "PKS V1" */
+}
+
+/* Estilo da navegação (botões) */
+nav {
+    margin-top: 40px; /* Ajuste a margem para dar mais espaço entre o texto e os botões */
+    text-align: center;
+}
+
+nav ul.T1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul.T1 li {
+    margin: 20px 0;  /* Distância entre os botões */
+}
+
+nav ul.T1 li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: 2px solid #FF0000;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Efeito de luz vermelha na borda após clicar no botão */
+nav ul.T1 li a:focus {
+    outline: none;
+    box-shadow: 0 0 15px 2px rgba(255, 0, 0, 0.8);
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .contact-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Alinha os contatos em uma coluna */
+    margin-bottom: 10px;
+}
+
+footer .contact-info div {
+    font-size: 14px;
+    margin-bottom: 5px;  /* Espaço entre as informações */
+}
+
+/* Alinhar o Discord e o telefone na mesma linha */
+footer .contact-info .social-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Espaço entre o telefone e o Discord */
+}
+
+footer p {
+    font-size: 12px;
+    margin-top: 10px;
+}
