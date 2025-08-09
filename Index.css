@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Creepster', sans-serif;
+  color: #f00;
+  text-align: center;
+  font-size: 4em;
+  margin-top: 30px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+  padding: 10px 20px;
+  height: calc(100vh - 180px); /* altura menor para deixar espaço para o rodapé */
+  overflow: hidden;
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  border-radius: 7px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+  gap: 15px;
+  width: 100%;
+  flex: 1;
+}
+
+.formLogin h1 {
+  font-size: 2em;
+  color: #f00;
+  font-family: 'Creepster', sans-serif;
+  text-align: center;
+}
+
+.formLogin p {
+  font-size: 14px;
+  text-align: center;
+  color: #ccc;
+}
+
+.formLogin input {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #f00;
+  border-radius: 4px;
+  background-color: #111;
+  color: #fff;
+  outline: none;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.formLogin input:hover,
+.formLogin input:focus {
+  box-shadow: 0 0 8px 2px rgba(255, 0, 0, 0.8);
+  border-color: #ff0000;
+}
+
+.formLogin .links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: center;
+}
+
+.formLogin .links a {
+  color: #f00;
+  font-family: 'Creepster', sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.formLogin .links a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+.btn, .google-btn {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 100%;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.google-btn {
+  background-color: #db4437;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
+.google-btn:hover {
+  background-color: #c1351d;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin-top: auto;
+}
+
+footer .contato {
+  margin-top: 5px;
+}
+
+footer .contato a {
+  font-family: 'Creepster', sans-serif;
+  color: #f00;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+footer .contato a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .formLogin h1 {
+    font-size: 1.7em;
+  }
+
+  .formLogin input,
+  .btn,
+  .google-btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .formLogin .links a {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+}
